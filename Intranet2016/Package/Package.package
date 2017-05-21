@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="568af3b5-a4b5-4372-b958-abe52f6c4a75" 
+        solutionId="568af3b5-a4b5-4372-b958-abe52f6c4a75" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Intranet2016"
+        sharePointProductVersion="16.0">
+</package>
