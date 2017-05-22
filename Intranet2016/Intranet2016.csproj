@@ -43,28 +43,65 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProjectDetail\ProjectDetail.ascx.cs">
+      <DependentUpon>ProjectDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDetail\ProjectDetail.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDetail.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{0a5b4bc9-5636-4dc9-b527-8673500a4169}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd4e87a3-9408-4561-a3a0-81025a1ad352}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a58921ae-23b9-496c-94ae-468942bf285c}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{568af3b5-a4b5-4372-b958-abe52f6c4a75}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="ProjectDetail\ProjectDetail.webpart" />
+    <None Include="ProjectDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec65363e-37aa-41b6-b35d-26be0e6ff7a9}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Folder Include="Images\Intranet2016\" />
+    <Folder Include="Layouts\Intranet2016\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Branding\Responsive.css" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="ProjectDetail\Elements.xml" />
+    <Content Include="ProjectDetail\ProjectDetail.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ProjectDetail.ascx.g.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

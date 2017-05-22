@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="568af3b5-a4b5-4372-b958-abe52f6c4a75" 
-        solutionId="568af3b5-a4b5-4372-b958-abe52f6c4a75" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="Intranet2016"
-        sharePointProductVersion="16.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="568af3b5-a4b5-4372-b958-abe52f6c4a75" solutionId="568af3b5-a4b5-4372-b958-abe52f6c4a75" resetWebServer="false" sharePointProductVersion="16.0" name="Intranet2016" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0a5b4bc9-5636-4dc9-b527-8673500a4169" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="cd4e87a3-9408-4561-a3a0-81025a1ad352" />
+    <projectItemReference itemId="a58921ae-23b9-496c-94ae-468942bf285c" />
+  </projectItems>
 </package>
